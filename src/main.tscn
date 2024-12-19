@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://70tr0rsmxuw4"]
+
+[ext_resource type="Script" path="res://src/Main.cs" id="1_omenf"]
+[ext_resource type="PackedScene" uid="uid://4vrjyed1vuvl" path="res://src/player.tscn" id="2_lulgm"]
+
+[sub_resource type="TileSet" id="TileSet_vw1nm"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_omenf")
+
+[node name="player" parent="." instance=ExtResource("2_lulgm")]
+position = Vector2(248, 53)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_vw1nm")
